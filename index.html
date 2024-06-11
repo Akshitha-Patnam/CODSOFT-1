@@ -1,0 +1,91 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Gardening for Small Spaces</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Urban Gardening for Small Spaces</h1>
+            <p>Transform your tiny space into a green haven</p>
+            <a href="#about" class="btn" onclick="showSection('about')">About Us</a>
+            <a href="#benefits" class="btn" onclick="showSection('benefits')">Benefits</a>
+            <a href="#tips" class="btn" onclick="showSection('tips')">Top Tips</a>
+            <a href="#contact" class="btn" onclick="showSection('contact')">Contact Us</a>
+        </div>
+    </header>
+    <section id="about" class="content-section">
+        <h2>About Urban Gardening</h2>
+        <p>Urban gardening is the practice of growing plants in an urban environment. It's perfect for those who have limited space but still want to enjoy the benefits of gardening.
+Urban gardening can trasform small spaces into lush, productive oases through creative methods like vertical gardens, rooftop gardens, and hydroponic systems.
+Imagine a living wall of herbs in your kitchen, a rooftop vegetable patch , or a compact hydroponic setup in your apartment. You can even grow plants in recycled containers or create community
+gardens with your neighbors.These innovative approches make urban gardening not only practical but also exciting and sustainable, bringing nature into the heart of the city.</p>
+        <img src="C:\Users\shanker\Downloads\ub5.jpg" alt="Urban Gardening">
+    </section>
+    <section id="benefits" class="content-section">
+        <h2>Benefits</h2>
+        <ul>
+            <li>Improves air quality</li>
+            <li>Reduces stress</li>
+            <li>Enhances aesthetic appeal</li>
+            <li>Provides fresh produce</li>
+        </ul>
+	<p>Urban gardening turns small spaces into green, happy places!</p>
+        <img src="C:\Users\shanker\Downloads\ub3.jpg" alt="Gardening Benefits">
+    </section>
+    <section id="tips" class="content-section">
+        <h2>Top Tips</h2>
+        <p>Discover the best practices to make the most of your small space for urban gardening.</p>
+        <ul>
+            <li>Choose the right plants</li>
+            <li>Utilize vertical space</li>
+            <li>Opt for container gardening</li>
+            <li>Ensure proper sunlight and watering</li>
+        </ul>
+        <img src="C:\Users\shanker\Downloads\u6.jpg" alt="Gardening Tips">
+    </section>
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>For more urban gardening tips, get in touch with us!</p>
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Urban Gardening Enthusiasts. All rights reserved.</p>
+    </footer>
+    <script>
+	
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+    // Show the clicked section
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.style.display = 'block';
+    }
+
+    // Scroll to the section
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
