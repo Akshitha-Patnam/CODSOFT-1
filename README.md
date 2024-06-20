@@ -1,1 +1,1 @@
-It's a landing page for urban spaces for smaller spaces!
+It's a landing page for urban gardening for smalle spaces!
